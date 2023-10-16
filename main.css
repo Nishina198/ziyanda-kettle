@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "MacanStencilLight";
+    src: url('./fonts/MacanStencilPanWeb-Light.woff2') format('woff2'),
+    url("./fonts/MacanStencilPanWeb-Light.woff") format('woff');
+  }
+  @font-face {
+    font-family: "MacanStencilRegular";
+    src: url('./fonts/MacanStencilPanWeb-Regular.woff2') format('woff2'),
+    url("./fonts/MacanStencilPanWeb-Regular.woff") format('woff');
+  }
+  @font-face {
+    font-family: "AcherusLight";
+    src: url('./fonts/AcherusGrotesque-Light.woff2') format('woff2'),
+    url("./fonts/AcherusGrotesque-Light.woff") format('woff');
+  }
+  @font-face {
+    font-family: "AcherusBold";
+    src:  url('./fonts/AcherusGrotesque-Bold.woff2') format('woff2'),
+    url("./fonts/AcherusGrotesque-Bold.woff") format('woff');
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0A0E11;
+}
+.grey{
+    color: #DFDEE3;
+}
+.art-font-big-text1{
+    font-family: "MacanStencilLight";
+    color: #DFDEE3;
+}
+.art-font-big-text2{
+    font-family: "MacanStencilRegular";
+}
+.art-font-smoll-text1{
+    font-family: "AcherusLight";
+    color: #FFAF5F;
+    font-size: 1.3vw;
+}
+.art-font-smoll-text2{
+    font-family: "AcherusBold";
+    font-size: 1.3vw;
+    
+}
+.display-1{
+    background-image: url("./img/Frame25.png");
+    background-position: center;      
+    background-repeat: no-repeat;      
+    background-size: cover; 
+    padding-bottom: 105%;
+    position: relative;
+}
+
+
+.text1_main{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    letter-spacing: -2px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.95) 5%, rgba(223,222,227,1) 25%, rgba(223,222,227,1) 75%, rgba(0,0,0,0.95) 95%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 6vw;
+    padding: 1em 0 15em 0;
+    margin-top: 0;
+
+
+}
+.text1_main_animation{
+    transform: translate(0px, 1%);
+    opacity: 0;
+    transition: all 0.5s ease 0.3s;
+}
+.text1_main_animation._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.description_animation{
+    opacity: 0;
+    transition: all 0s ease 1s;
+}
+
+.description_animation._active{
+    animation: blinker 0.5s linear 1; 
+    animation-delay: 0.7s;
+    opacity: 1;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    } 
+}
+
+.text2{
+    font-size: 4vw;
+    text-align: center;
+    
+}
+.last-text-width{
+    width: 70%;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: -1%;
+}
+.text-div-2, .text-div-1{
+    width: 35%;
+    display: flex;
+    align-items: flex-start;
+    gap: 1%;
+}
+.romb{
+  margin-top: 5%;
+  margin-right: 3%;
+ 
+}
+.img1-responsive{
+    z-index: 1;
+}
+.img2-responsive{
+    z-index: 2;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.vector-frame, .vector-frame1{
+    display:flex;
+}
+.last-frame{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin-top: 5%;
+}
+.div-center-last-frame{
+    display: flex;
+    padding-left: 5%;
+    flex-direction: column;
+    margin-top: -2%;
+}
+.last-frame-div-mobile{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: -2%;
+}
+.last-frame-text1-mobile{
+    margin: 0 14%;
+    
+}
+.last-frame-text2-mobile{
+    margin: 0 16%;
+    text-align: center;
+}
+.title-last{
+    text-align: left;
+}
+.div-text-last-frame{
+   
+    margin-top: -3%;
+}
+.text-last-frame{
+    margin-top: -2%;
+   
+}
+.div-last-frame{
+    display: flex;
+    gap: 3%;
+}
+.price-last-frame{
+    font-size: 3.5vw;
+    margin-top: 0;
+}
+.color-btn{
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    margin-left: 3%;
+    border: none;
+}
+.div-color-btn button:focus{
+    border: 3px solid #FFAF5F;
+  }
+.div-color-btn{
+    display: flex;
+    align-items: center;
+    border: 2px  #FFAF5F;
+    border-style: hidden hidden solid hidden;
+    width: 350px;
+    padding-bottom: 3px;
+}
+.big-btn{
+    display: flex;
+    font-family: "AcherusBold";
+    font-size: 1.3vw;
+    color: #DFDEE3;
+    border: solid 2px #FFAF5F;
+    border-radius: 20px;
+    margin-left: 15%;
+    padding: 1% 6%;
+    
+}
+.line-through{
+    text-decoration: line-through 3px;
+    color: #BABABA;
+}
+.vector-kettle{
+    margin-top: 5%; 
+}
+.svg-mobile{
+    margin-top: 7%;
+    margin-bottom: 0;
+}
+.last-frame-div-mobile2{
+    display: flex;
+    flex-direction: column;
+}
+.item-center{
+    align-self: center;
+}
+@media only screen and (max-width: 1615px) {
+    .vector-kettle{
+        width: 330px;
+        height: auto;
+    }
+    .romb{
+        width: 40px;
+    }
+    .svg{
+        width: 100px;
+    }
+  }
+  @media only screen and (max-width: 1442px) {
+    .vector-kettle{
+        width: 250px;
+        height: auto;
+    }
+    .svg{
+        width: 80px;
+    }
+  }
+  @media only screen and (max-width: 1250px){
+    .svg{
+        width: 70px;
+    }
+  }
+  
+  @media only screen and (max-width: 1175px){
+    .big-btn{
+        padding: 1% 3%;
+        margin-left: 8%;
+    }
+    .svg{
+        width: 70px;
+    }
+  }
+  @media only screen and (max-width: 1150px) {
+    .romb{
+        width: 30px;
+    }
+  }
+  @media only screen and (max-width: 1050px){
+    .big-btn{
+        margin-left: 5%;
+        padding-top: 1.5%;
+    }
+    .svg{
+        width: 65px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .div-color-btn{
+        width: 36%;
+        padding: 1.5% 15%;
+        margin: 8% 0;
+    }
+    .color-btn{
+        height: 6vw;
+        width: 6vw;
+    }
+    .big-btn{
+        margin-left: 0;
+        font-size: 2.5vw;
+        padding-top: 0.5%;
+        margin-bottom: 3%;
+    }
+    .price-last-frame{
+        margin-top: 8%;
+        font-size: 6vw;
+        margin-bottom: 5%;
+    }
+    .text1_main{
+        width: 70%;
+        margin: 0 15%;
+        padding: 1em 0 15em 0;
+        font-size: 8.2vw;
+    }
+    .display-1{
+        background-image: url("./img/Frame-17.png");     
+        background-size:cover; 
+        padding-bottom: 150%;
+        background-position: center; 
+        background-position: center;      
+        background-repeat: no-repeat;      
+        position: relative;
+    }
+    .description{
+        flex-direction: column;
+        width: 100%
+    }
+    .text-div-2, .text-div-1{
+        width: 60%;
+        margin: 0 20%;
+        display: flex;
+        justify-items: center;
+    }
+    .art-font-smoll-text1, .art-font-smoll-text2{
+        font-size: 2.5vw;
+    }
+
+    .vector-frame{
+        display: none;
+    }
+    .text2{
+        font-size: 8vw;
+        letter-spacing: -3px;
+    }
+    .title2{
+        margin: 0 5%;
+    }
+    .last-frame{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 1001px){
+    .vector-frame1{
+        display: none;
+    }
+    .mobile-last-frame{
+        display: none;
+    }
+}
