@@ -306,13 +306,13 @@ body{
     .text1_main{
         width: 85%;
         margin: 0 7.5%;
-        padding: 1.5em 0 15em 0;
-        font-size: 8.9vw;
+        padding: 1.3em 0 15em 0;
+        font-size: 9.5vw;
     }
     .display-1{
         background-image: url("./img/Frame-17.png");     
         background-size:cover; 
-        padding-bottom: 170%;
+        padding-bottom: 180%;
         background-position: center; 
         background-position: center;      
         background-repeat: no-repeat;      
