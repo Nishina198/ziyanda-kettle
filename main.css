@@ -304,15 +304,15 @@ body{
         margin-bottom: 5%;
     }
     .text1_main{
-        width: 70%;
-        margin: 0 15%;
-        padding: 1em 0 15em 0;
-        font-size: 8.2vw;
+        width: 85%;
+        margin: 0 7.5%;
+        padding: 1.5em 0 15em 0;
+        font-size: 8.9vw;
     }
     .display-1{
         background-image: url("./img/Frame-17.png");     
         background-size:cover; 
-        padding-bottom: 150%;
+        padding-bottom: 170%;
         background-position: center; 
         background-position: center;      
         background-repeat: no-repeat;      
