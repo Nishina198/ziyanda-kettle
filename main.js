@@ -17,8 +17,6 @@ if (animItems.length > 0){
 
             if((pageYOffset > animItemOffset - animItemPoint)&& pageYOffset < (animItemOffset + animItemHeight)){
                 animItem.classList.add('_active');
-            }else{
-                animItem.classList.remove('_active');
             }
         }
     }
@@ -28,16 +26,8 @@ if (animItems.length > 0){
         scrollTop = window.pageYOffset || document.documentElement.scrollTop
         return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
     }
-    
     animOnScroll()
-    
-    
 }
-
-
-
-
-
 function changeKettleImage(color) {
     let kettleImage = document.getElementById('kettleImage');
     let kettleImage2 = document.getElementById('kettleImage2');
