@@ -284,17 +284,18 @@ body{
   }
   @media only screen and (max-width: 1000px) {
     .div-color-btn{
-        width: 36%;
+        width: 50%;
         padding: 1.5% 15%;
         margin: 8% 0;
     }
     .color-btn{
-        height: 6vw;
-        width: 6vw;
+        height: 8vw;
+        width: 8vw;
+        margin-left: 4%;
     }
     .big-btn{
         margin-left: 0;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         padding-top: 0.5%;
         margin-bottom: 3%;
     }
