@@ -323,20 +323,20 @@ body{
         width: 100%
     }
     .text-div-2, .text-div-1{
-        width: 60%;
-        margin: 0 20%;
+        width: 76%;
+        margin: 0 12%;
         display: flex;
         justify-items: center;
     }
     .art-font-smoll-text1, .art-font-smoll-text2{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     .vector-frame{
         display: none;
     }
     .text2{
-        font-size: 8vw;
+        font-size: 8.5vw;
         letter-spacing: -3px;
     }
     .title2{
